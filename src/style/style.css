@@ -4,10 +4,9 @@
 }
 body{
     width: 1440px;
-    height:4417px;
+    height:4427px;
     background-image: url(../img/main.jpg);
-    background-size: 100%;
-    background-size: contain;
+    background-size:cover;
     background-repeat: no-repeat;
     color:white;
     overflow-x:hidden;
@@ -215,7 +214,6 @@ margin-right: 8px;
     padding-bottom: 10px;
     display: flex;
     align-items: center;
-    justify-content: right;
 }
 #item p{
     font-family: 'DM Sans';
@@ -258,6 +256,9 @@ margin-right: 8px;
 
     color: rgba(255, 255, 255, 0.8);
 
+}
+#column li:hover{
+    color:#545BEC;
 }
 .line1{
     display: none;

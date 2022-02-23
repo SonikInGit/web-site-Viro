@@ -59,6 +59,14 @@ margin-left: 427px;
 #menu li{
     list-style-type: none;
 }
+#menu li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400px;
+}
+#menu li a:hover{
+    color: #545BEC;
+}
 #contact{
     width: 132px;
     height: 42px;
@@ -195,7 +203,6 @@ margin-right: 8px;
     padding-bottom: 10px;
     display: flex;
     align-items: center;
-    justify-content: right;
 }
 #item p{
     font-family: 'DM Sans';
@@ -238,6 +245,9 @@ margin-right: 8px;
 
     color: rgba(255, 255, 255, 0.8);
 
+}
+#column li:hover{
+    color:#545BEC;
 }
 .line{
     width: 1440px;
