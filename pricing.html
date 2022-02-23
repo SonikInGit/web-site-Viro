@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8" name="keywords" content="Viro">
     <title>Viro</title>
-    <link rel="stylesheet" href="./src/style/style_pricing.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./src/style/style_pricing.css" media="screen and (min-width: 801px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
+<link href="src/style/style_price_mobile.css" rel="stylesheet" media="screen and (max-width: 800px)">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <div class="site-bar">
@@ -17,18 +23,37 @@
       <img src="src/img/logo 2.svg" alt="logo" width="52px" height="32px">
       <p>Viro.</p>
     </div>
+    <nav role='navigation'>
+      <div id="menuToggle">
+    
+        <input type="checkbox" />
+        
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <ul id="menu">
+          <a href="index.html"><li>Home</li></a>
+          <a href="about us.html"><li>About us</li></a>
+          <a href="Features.html"><li>Features</li></a>
+          <a href="pricing.html"><li>Pricing</li></a>
+          <a href="blog.html"><li>Blog</li></a>
+        </ul>
+      </div>
+    </nav>
     <div class="header">
       <ul id="menu">
-        <li>Home</li>
-        <li>About us</li>
-        <li>Service</li>
-        <li>Pricing</li>
-        <li>Blog</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about us.html">About us</a></li>
+        <li><a href="Features.html">Features</a></li>
+        <li style="border-bottom: 2px solid #545BEC; color: #545BEC;"><a href="pricing.html" style="color: #545BEC;">Pricing</a></li>
+        <li><a href="blog.html">Blog</a></li>
       </ul>
       <button id="contact">Contact Us</button>
     </div>
   </div>
 
+  <div class="animate__animated animate__fadeInUp">
 <div class="heading">
   <h1>Reality that will be
     open to you</h1>
@@ -36,6 +61,7 @@
 </div>
 
 <div class="blocks">
+  <div class="animate__animated animate__fadeInUp">
   <div class="block">
     <h1>Free</h1>
     <p>Just everything you need to start with</p>
@@ -55,6 +81,8 @@
       <p>Realtime overview</p>
     </div>
   </div>
+  </div>
+  <div class="animate__animated animate__fadeInUp">
   <div class="block">
     <h1>Basic</h1>
     <p>In case if You need a bit more features</p>
@@ -74,6 +102,8 @@
       <p>Realtime overview</p>
     </div>
   </div>
+  </div>
+  <div class="animate__animated animate__fadeInUp">
   <div class="block">
     <h1>Pro</h1>
     <p>For your more complicated ideas</p>
@@ -93,11 +123,12 @@
       <p>Realtime overview</p>
     </div>
   </div>
+  </div>
+</div>
 </div>
 
 
-
-  <div class="subscribe-panel">
+  <div class="subscribe-panel" id="to_hide">
     <div class="background"></div>
     <h1>Subscribe to get the Latest News</h1>
     <p>We recommended you to subscribe to our newspaper,
@@ -111,8 +142,9 @@
       </form>
   </div>
   <div class="footer">
+    <div class="line1"></div>
     <div class="about_company">
-      <div class="logo-name2">
+      <div class="logo-name2" id="to_hide">
         <img src="src/img/logo 2.svg" alt="logo" width="42px" height="22px">
         <p>Viro.</p>
       </div>
@@ -135,7 +167,7 @@
         <img src="src/img/pinterest.svg" alt="pinterest">
       </div>
     </div>
-    <div class="pages">
+    <div class="pages" id="to_hide">
       <ul id="column">
         <li>Service</li>
         <li>Order Management</li>
@@ -166,14 +198,15 @@
       </ul>
     </div>
   </div>
-  <div class="line"></div>
-    <div class="footer_menu">
-      <p>© 2021 Viro. - All rights reserved.</p>
-      <ul id="footmenu">
-        <li>Privacy</li>
-        <li>Security</li>
-        <li>Terms</li>
-      </ul>
-    </div>
+  <div class="line" id="to_hide"></div>
+  <div class="footer_menu">
+    <p>© 2021 Viro. - All rights reserved.</p>
+    <ul id="footmenu">
+      <li>Privacy</li>
+      <li>Security</li>
+      <li>Terms</li>
+    </ul>
+    <button id="up"><img src="src/img/Vector_arrow.svg" alt="arrow"></button>
+  </div>
 </body>
 </html>

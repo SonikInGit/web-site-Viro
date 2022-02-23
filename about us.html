@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8" name="keywords" content="Viro">
     <title>Viro</title>
-    <link rel="stylesheet" href="./src/style/style_about_us.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./src/style/style_about_us.css" media="screen and (min-width: 801px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
+<link href="src/style/style_about_mob.css" rel="stylesheet" media="screen and (max-width: 800px)">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <div class="site-bar">
@@ -17,18 +23,37 @@
       <img src="src/img/logo 2.svg" alt="logo" width="52px" height="32px">
       <p>Viro.</p>
     </div>
+    <nav role='navigation'>
+      <div id="menuToggle">
+    
+        <input type="checkbox" />
+        
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <ul id="menu">
+          <a href="index.html"><li>Home</li></a>
+          <a href="about us.html"><li>About us</li></a>
+          <a href="Features.html"><li>Features</li></a>
+          <a href="pricing.html"><li>Pricing</li></a>
+          <a href="blog.html"><li>Blog</li></a>
+        </ul>
+      </div>
+    </nav>
     <div class="header">
       <ul id="menu">
-        <li>Home</li>
-        <li>About us</li>
-        <li>Service</li>
-        <li>Pricing</li>
-        <li>Blog</li>
+        <li ><a href="index.html">Home</a></li>
+        <li style="border-bottom: 2px solid #545BEC; color: #545BEC;"><a href="about us.html" style="color: #545BEC;">About us</a></li>
+        <li><a href="Features.html">Features</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="blog.html">Blog</a></li>
       </ul>
       <button id="contact">Contact Us</button>
     </div>
   </div>
 
+  <div class="animate__animated animate__fadeInUp">
 <div class="about">
   <div class="text">
     <p>About us</p>
@@ -36,6 +61,7 @@
   </div>
   <img src="src/img/metaverse.png" alt="glasses">
 </div>
+  </div>
 
 <div class="rates">
   <h1>Around 20 Projects 7 countries 2 years</h1>
@@ -50,11 +76,17 @@
   </div>
   <p>on Clutch</p>
   </div>
-  <div class="companies">
+  <div class="companies" id="to_hide">
     <img  src="src/img/magic leap.png" alt="star" width="154px" height="82px">
     <img  src="src/img/niantic.png" alt="star" width="90px" height="116px" style="padding-bottom: 46px;">
     <img  src="src/img/VIRTUALSPEECH.png" alt="star" width="202px" height="125px">
     <img  src="src/img/neurable.png" alt="star" width="229px" height="50px" style="padding-top: 40px;">
+  </div>
+  <div class="companies1">
+    <img  src="src/img/magic leap.png" alt="star" width="103px" height="55px">
+    <img  src="src/img/niantic.png" alt="star" width="61px" height="78px" style="padding-right: 15px;">
+    <img  src="src/img/VIRTUALSPEECH.png" alt="star" width="109px" height="70px">
+    <img  src="src/img/neurable.png" alt="star" width="109px" height="24px">
   </div>
 </div>
 
@@ -72,11 +104,17 @@
   <h1>The awards won 
     with different products
     </h1>
-  <div class="award">
+  <div class="award" id="to_hide">
     <img  src="src/img/event.svg" alt="award" width="217px" height="69px" style="padding-top: 25px;">
     <img  src="src/img/global.png" alt="award" width="187px" height="114px">
     <img  src="src/img/future.png" alt="award" width="215px" height="97px" style="padding-top: 12px;">
     <img  src="src/img/inntech.png" alt="award" width="100px" height="115px">
+  </div>
+  <div class="award1">
+    <img  src="src/img/event.svg" alt="award" width="122px" height="37px" style="padding-top: 20px;">
+    <img  src="src/img/global.png" alt="award" width="107px" height="66px">
+    <img  src="src/img/future.png" alt="award" width="130px" height="59px" style="padding-top: 15px;">
+    <img  src="src/img/inntech.png" alt="award" width="60px" height="69px" style="padding-right: 25px;">
   </div>
 </div>
 <div class="photos">
@@ -87,7 +125,7 @@
   <div class="subscribe-panel">
     <div class="background"></div>
     <h1>Do You want future project with us?</h1>
-    <p>Let’s get to work, drop your email below and our manager will contact you</p>
+    <p>Let's get to work, drop your email below and our manager will contact you</p>
       <form class="form">
             <input type="email" class="email_input" placeholder="Enter your email address">
             <button type="submit" class="send">
@@ -97,8 +135,9 @@
       </form>
   </div>
   <div class="footer">
+    <div class="line1"></div>
     <div class="about_company">
-      <div class="logo-name2">
+      <div class="logo-name2" id="to_hide">
         <img src="src/img/logo 2.svg" alt="logo" width="42px" height="22px">
         <p>Viro.</p>
       </div>
@@ -121,7 +160,7 @@
         <img src="src/img/pinterest.svg" alt="pinterest">
       </div>
     </div>
-    <div class="pages">
+    <div class="pages" id="to_hide">
       <ul id="column">
         <li>Service</li>
         <li>Order Management</li>
@@ -152,14 +191,15 @@
       </ul>
     </div>
   </div>
-  <div class="line"></div>
-    <div class="footer_menu">
-      <p>© 2021 Viro. - All rights reserved.</p>
-      <ul id="footmenu">
-        <li>Privacy</li>
-        <li>Security</li>
-        <li>Terms</li>
-      </ul>
-    </div>
+  <div class="line" id="to_hide"></div>
+  <div class="footer_menu">
+    <p>© 2021 Viro. - All rights reserved.</p>
+    <ul id="footmenu">
+      <li>Privacy</li>
+      <li>Security</li>
+      <li>Terms</li>
+    </ul>
+    <button id="up"><img src="src/img/Vector_arrow.svg" alt="arrow"></button>
+  </div>
 </body>
 </html>
